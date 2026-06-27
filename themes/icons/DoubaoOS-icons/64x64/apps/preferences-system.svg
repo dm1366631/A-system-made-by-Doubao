@@ -1,0 +1,17 @@
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#6b7280"/>
+<stop offset="100%" stop-color="#334155"/>
+</linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<rect x="58.879999999999995" y="29.44" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(0 61.44 32.0)"/>
+<rect x="50.25722363813196" y="50.257223638131954" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(45 52.81722363813196 52.817223638131956)"/>
+<rect x="29.44" y="58.879999999999995" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(90 32.0 61.44)"/>
+<rect x="8.622776361868043" y="50.25722363813196" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(135 11.182776361868044 52.81722363813196)"/>
+<rect x="-1.3322676295501878e-15" y="29.44000000000001" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(180 2.5599999999999987 32.00000000000001)"/>
+<rect x="8.622776361868036" y="8.622776361868043" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(225 11.182776361868036 11.182776361868044)"/>
+<rect x="29.439999999999994" y="-1.3322676295501878e-15" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(270 31.999999999999993 2.5599999999999987)"/>
+<rect x="50.257223638131954" y="8.622776361868036" width="5.12" height="5.12" rx="0.96" fill="url(#g1)" transform="rotate(315 52.817223638131956 11.182776361868036)"/>
+<circle cx="32.0" cy="32.0" r="24.32" fill="url(#g1)"/>
+<circle cx="32.0" cy="32.0" r="14.08" fill="#1e293b"/>
+<circle cx="32.0" cy="32.0" r="7.04" fill="#3b82f6"/>
+</svg>
