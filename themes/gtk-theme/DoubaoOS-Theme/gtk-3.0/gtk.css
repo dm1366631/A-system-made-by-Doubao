@@ -1,0 +1,574 @@
+/* DoubaoOS GTK3 Theme
+ * 基于 Debian Xfce 的自定义美化主题
+ * 配色方案：蓝色系现代风格
+ */
+
+/* ========== 颜色定义 ========== */
+@define-color bg_color #f8fafc;
+@define-color fg_color #1e293b;
+@define-color base_color #ffffff;
+@define-color text_color #0f172a;
+@define-color selected_bg_color #3b82f6;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #1e293b;
+@define-color tooltip_fg_color #ffffff;
+
+@define-color accent_color #3b82f6;
+@define-color accent_bg_color #dbeafe;
+@define-color accent_fg_color #1d4ed8;
+
+@define-color destructive_color #ef4444;
+@define-color destructive_bg_color #fee2e2;
+@define-color destructive_fg_color #dc2626;
+
+@define-color success_color #10b981;
+@define-color warning_color #f59e0b;
+@define-color error_color #ef4444;
+
+@define-color border_color #e2e8f0;
+@define-color shadow_color rgba(0, 0, 0, 0.1);
+
+/* ========== 全局样式 ========== */
+* {
+    -GtkWidget-window-dragging: true;
+    -GtkMenuBar-internal-padding: 0;
+    -GtkMenuItem-arrow-scaling: 0.5;
+    -GtkButton-default-border: 0;
+    -GtkButton-default-outside-border: 0;
+    -GtkButton-inner-border: 0;
+    -GtkButton-image-spacing: 6;
+    -GtkButton-interior-focus: true;
+    -GtkCheckButton-indicator-size: 16;
+    -GtkCheckMenuItem-indicator-size: 14;
+    -GtkScrolledWindow-scrollbar-spacing: 0;
+    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+    -GtkScrollbar-has-secondary-forward-stepper: 0;
+    -GtkScrollbar-has-secondary-backward-stepper: 0;
+    -GtkScrollbar-min-slider-length: 120;
+    -GtkScrollbar-activate-slider: 1;
+    -GtkScrollbar-trough-border: 0;
+    -GtkScrollbar-wide-separators: 0;
+    -GtkPaned-handle-size: 3;
+    -GtkRange-trough-border: 0;
+    -GtkRange-slider-width: 12;
+    -GtkRange-stepper-spacing: 0;
+    -GtkRange-trough-under-steppers: 1;
+    -GtkToolbar-internal-padding: 0;
+    -GtkNotebook-tab-overlap: 2;
+    -GtkNotebook-tab-curvature: 2;
+    -GtkFrame-cursor-aspect-ratio: 0.5;
+    -GtkDialog-content-area-border: 0;
+    -GtkDialog-button-spacing: 0;
+    -GtkDialog-action-area-border: 0;
+    -GtkProgressBar-min-horizontal-bar-height: 16;
+    -GtkProgressBar-min-vertical-bar-width: 16;
+    -GtkWidget-focus-line-width: 1;
+    -GtkWidget-focus-padding: 1;
+    -GtkWidget-link-color: #3b82f6;
+    -GtkWidget-visited-link-color: #7c3aed;
+    -GtkWidget-separator-width: 1;
+    -GtkWidget-separator-height: 1;
+    -GtkContainer-cursor-aspect-ratio: 0.5;
+    -GtkEntry-inner-border: 3;
+    -GtkEntry-progress-border: 0;
+    -GtkExpander-expander-size: 12;
+    -GtkHTML-link-color: #3b82f6;
+    -GtkIMHtml-hyperlink-color: #3b82f6;
+    -GtkTextView-error-underline-color: #ef4444;
+    -GtkSpinButton-button-spacing: 0;
+    -GtkCalendar-horizontal-separation: 6;
+    -GtkCalendar-vertical-separation: 6;
+    -GtkCalendar-inner-border: 0;
+    -GtkCalendar-marker-padding: 2;
+}
+
+/* ========== 窗口背景 ========== */
+window {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* ========== 按钮样式 ========== */
+button {
+    background-image: none;
+    background-color: #f1f5f9;
+    border: 1px solid @border_color;
+    border-radius: 6px;
+    color: @fg_color;
+    padding: 6px 12px;
+    min-height: 24px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #e2e8f0;
+    border-color: #cbd5e1;
+}
+
+button:active {
+    background-color: #cbd5e1;
+    border-color: #94a3b8;
+}
+
+button:checked {
+    background-color: @accent_color;
+    border-color: @accent_color;
+    color: white;
+}
+
+button.suggested-action {
+    background-color: @accent_color;
+    border-color: @accent_color;
+    color: white;
+    font-weight: 500;
+}
+
+button.suggested-action:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+button.destructive-action {
+    background-color: @destructive_color;
+    border-color: @destructive_color;
+    color: white;
+}
+
+/* ========== 输入框样式 ========== */
+entry {
+    background-color: @base_color;
+    border: 1px solid @border_color;
+    border-radius: 6px;
+    color: @text_color;
+    padding: 6px 8px;
+    min-height: 24px;
+    transition: all 0.2s ease;
+}
+
+entry:focus {
+    border-color: @accent_color;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+entry:disabled {
+    background-color: #f1f5f9;
+    color: #94a3b8;
+}
+
+/* ========== 复选框和单选按钮 ========== */
+checkbutton,
+radiobutton {
+    min-height: 24px;
+    padding: 2px 0;
+}
+
+checkbutton check,
+radiobutton radio {
+    background-color: @base_color;
+    border: 1px solid @border_color;
+    border-radius: 4px;
+    min-width: 16px;
+    min-height: 16px;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+}
+
+radiobutton radio {
+    border-radius: 50%;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background-color: @accent_color;
+    border-color: @accent_color;
+}
+
+checkbutton check:checked {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path d='M3 8l4 4 6-6' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-size: 12px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ========== 滚动条样式 ========== */
+scrollbar {
+    background-color: transparent;
+    border-radius: 8px;
+    min-width: 8px;
+    min-height: 8px;
+}
+
+scrollbar slider {
+    background-color: #cbd5e1;
+    border-radius: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    transition: background-color 0.2s ease;
+}
+
+scrollbar slider:hover {
+    background-color: #94a3b8;
+}
+
+scrollbar slider:active {
+    background-color: @accent_color;
+}
+
+scrollbar trough {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+/* ========== 进度条 ========== */
+progressbar {
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    min-height: 8px;
+}
+
+progressbar progress {
+    background-color: @accent_color;
+    border-radius: 8px;
+    min-height: 8px;
+}
+
+/* ========== 标签页 ========== */
+notebook {
+    background-color: @bg_color;
+    border: 1px solid @border_color;
+    border-radius: 8px;
+}
+
+notebook header {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid @border_color;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+notebook tab {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 16px;
+    color: #64748b;
+    transition: all 0.2s ease;
+}
+
+notebook tab:hover {
+    color: @fg_color;
+    background-color: #e2e8f0;
+}
+
+notebook tab:checked {
+    color: @accent_color;
+    border-bottom-color: @accent_color;
+    font-weight: 500;
+}
+
+/* ========== 菜单 ========== */
+menu {
+    background-color: @base_color;
+    border: 1px solid @border_color;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 4px;
+}
+
+menuitem {
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+}
+
+menuitem:hover {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+/* ========== 工具栏 ========== */
+toolbar {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid @border_color;
+    padding: 4px;
+}
+
+/* ========== 侧边栏 ========== */
+sidebar {
+    background-color: #f8fafc;
+    border-right: 1px solid @border_color;
+}
+
+sidebar row {
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 2px 4px;
+}
+
+sidebar row:hover {
+    background-color: #f1f5f9;
+}
+
+sidebar row:selected {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+    font-weight: 500;
+}
+
+/* ========== 标题栏 ========== */
+headerbar {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid @border_color;
+    padding: 4px 8px;
+    min-height: 36px;
+}
+
+headerbar title {
+    font-weight: 500;
+    color: @fg_color;
+}
+
+/* ========== 开关按钮 ========== */
+switch {
+    background-color: #cbd5e1;
+    border-radius: 12px;
+    min-width: 40px;
+    min-height: 24px;
+    padding: 2px;
+    transition: background-color 0.2s ease;
+}
+
+switch:checked {
+    background-color: @accent_color;
+}
+
+switch slider {
+    background-color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    min-height: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== 组合框 ========== */
+combobox button.combo {
+    background-color: @base_color;
+    border: 1px solid @border_color;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+combobox button.combo:hover {
+    border-color: #cbd5e1;
+}
+
+combobox button.combo:focus {
+    border-color: @accent_color;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ========== 微调按钮 ========== */
+spinbutton {
+    background-color: @base_color;
+    border: 1px solid @border_color;
+    border-radius: 6px;
+}
+
+spinbutton:focus {
+    border-color: @accent_color;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* ========== 滑块 ========== */
+scale {
+    padding: 12px 0;
+}
+
+scale trough {
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    min-height: 4px;
+}
+
+scale highlight {
+    background-color: @accent_color;
+    border-radius: 4px;
+    min-height: 4px;
+}
+
+scale slider {
+    background-color: white;
+    border: 2px solid @accent_color;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+scale slider:hover {
+    background-color: @accent_bg_color;
+}
+
+/* ========== 分隔线 ========== */
+separator {
+    background-color: @border_color;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+/* ========== 工具提示 ========== */
+tooltip {
+    background-color: @tooltip_bg_color;
+    color: @tooltip_fg_color;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.9em;
+}
+
+/* ========== 视图/列表 ========== */
+view,
+treeview {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+view:selected,
+treeview:selected {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+treeview header button {
+    background-color: #f8fafc;
+    border: none;
+    border-bottom: 1px solid @border_color;
+    border-radius: 0;
+    padding: 8px;
+}
+
+treeview header button:hover {
+    background-color: #f1f5f9;
+}
+
+/* ========== 框架 ========== */
+frame {
+    border: 1px solid @border_color;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+frame label {
+    font-weight: 500;
+    color: @fg_color;
+}
+
+/* ========== 信息栏 ========== */
+infobar {
+    border-radius: 6px;
+    padding: 8px;
+}
+
+infobar.info {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+infobar.warning {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+infobar.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+infobar.question {
+    background-color: #ede9fe;
+    color: #5b21b6;
+}
+
+/* ========== 对话框 ========== */
+dialog {
+    background-color: @bg_color;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+dialog headerbar {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+/* ========== 日历 ========== */
+calendar {
+    background-color: @base_color;
+    border: 1px solid @border_color;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+calendar:selected {
+    background-color: @accent_color;
+    color: white;
+    border-radius: 4px;
+}
+
+/* ========== 链接 ========== */
+link,
+label:link {
+    color: @accent_color;
+    text-decoration: none;
+}
+
+link:hover,
+label:link:hover {
+    text-decoration: underline;
+}
+
+/* ========== 禁用状态 ========== */
+*:disabled {
+    opacity: 0.5;
+}
+
+/* ========== Xfce 特定样式 ========== */
+.xfce4-panel {
+    background-color: rgba(30, 41, 59, 0.95);
+    color: white;
+}
+
+.xfce4-panel button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 8px;
+}
+
+.xfce4-panel button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.xfce4-panel button:checked {
+    background-color: rgba(59, 130, 246, 0.5);
+}
+
+/* ========== 窗口装饰（Xfwm） ========== */
+.window-frame {
+    background-color: #1e293b;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.window-frame:backdrop {
+    background-color: #334155;
+}
+
+.window-frame .title {
+    color: white;
+    font-weight: 500;
+}
+
+.window-frame .title:backdrop {
+    color: #94a3b8;
+}
