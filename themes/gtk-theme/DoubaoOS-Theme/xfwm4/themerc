@@ -1,0 +1,35 @@
+# DoubaoOS Xfwm4 Theme
+# 窗口管理器主题配置
+
+show_app_icon=true
+button_offset=6
+button_spacing=4
+full_width_title=true
+maximized_offset=0
+shadow_delta_height=0
+shadow_delta_width=0
+shadow_delta_x=0
+shadow_delta_y=0
+shadow_opacity=0
+title_vertical_offset_active=4
+title_vertical_offset_inactive=4
+
+# 颜色配置
+active_text_color=#ffffff
+inactive_text_color=#94a3b8
+
+# 标题栏高度
+title_height=32
+
+# 按钮大小
+button_width=28
+button_height=28
+
+# 边框宽度
+border_width=1
+
+# 圆角
+roundness=6
+
+# 阴影
+shadow_opacity=0.2
