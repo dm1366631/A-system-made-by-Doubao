@@ -1,0 +1,14 @@
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#3b82f6"/>
+<stop offset="100%" stop-color="#1d4ed8"/>
+</linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<rect x="8.64" y="5.76" width="30.72" height="36.480000000000004" rx="1.44" fill="white" stroke="url(#g1)" stroke-width="1.44"/>
+<line x1="14.399999999999999" y1="5.76" x2="14.399999999999999" y2="42.24" stroke="#93c5fd" stroke-width="0.96"/>
+<rect x="16.799999999999997" y="10.56" width="19.200000000000003" height="1.92" rx="0.48" fill="#e5e7eb"/>
+<rect x="16.799999999999997" y="15.36" width="19.200000000000003" height="1.92" rx="0.48" fill="#e5e7eb"/>
+<rect x="16.799999999999997" y="20.160000000000004" width="19.200000000000003" height="1.92" rx="0.48" fill="#e5e7eb"/>
+<rect x="16.799999999999997" y="24.96" width="19.200000000000003" height="1.92" rx="0.48" fill="#e5e7eb"/>
+<rect x="16.799999999999997" y="29.759999999999998" width="19.200000000000003" height="1.92" rx="0.48" fill="#e5e7eb"/>
+<rect x="16.799999999999997" y="34.56" width="19.200000000000003" height="1.92" rx="0.48" fill="#e5e7eb"/>
+</svg>
