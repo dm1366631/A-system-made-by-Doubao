@@ -1,0 +1,8 @@
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#3b82f6"/>
+<stop offset="100%" stop-color="#1d4ed8"/>
+</linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+<circle cx="24.0" cy="16.799999999999997" r="8.64" fill="url(#g1)"/>
+<path d="M 9.600000000000001 40.8 Q 9.600000000000001 26.400000000000002 24.0 26.400000000000002 Q 38.400000000000006 26.400000000000002 38.400000000000006 40.8" fill="url(#g1)"/>
+</svg>
