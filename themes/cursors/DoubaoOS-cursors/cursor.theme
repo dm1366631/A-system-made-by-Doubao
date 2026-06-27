@@ -1,0 +1,11 @@
+[Icon Theme]
+Name=DoubaoOS Cursors
+Comment=DoubaoOS custom cursor theme
+
+# 光标颜色配置
+# 基于蓝色主题的光标配色
+
+[Cursor Theme]
+Color=#3b82f6
+OutlineColor=#1d4ed8
+Size=24
