@@ -1,0 +1,21 @@
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#334155"/>
+<stop offset="100%" stop-color="#1e293b"/>
+</linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<rect x="51.2" y="30.72" width="153.6" height="194.56" rx="12.8" fill="url(#g1)"/>
+<rect x="66.56" y="51.2" width="122.88" height="38.4" rx="5.12" fill="#10b981" opacity="0.3"/>
+<text x="174.08" y="79.36" font-family="monospace" font-size="25.6" fill="#10b981" text-anchor="end">0</text>
+<rect x="66.56" y="102.4" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="110.08000000000001" y="102.4" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="153.60000000000002" y="102.4" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="66.56" y="130.56" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="110.08000000000001" y="130.56" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="153.60000000000002" y="130.56" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="66.56" y="158.72" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="110.08000000000001" y="158.72" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="153.60000000000002" y="158.72" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="66.56" y="186.88" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="110.08000000000001" y="186.88" width="33.28" height="20.48" rx="3.84" fill="#6b7280"/>
+<rect x="153.60000000000002" y="186.88" width="33.28" height="20.48" rx="3.84" fill="#3b82f6"/>
+</svg>
