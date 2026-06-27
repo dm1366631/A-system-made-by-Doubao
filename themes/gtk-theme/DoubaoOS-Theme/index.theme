@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=DoubaoOS Theme
+Comment=DoubaoOS custom desktop theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=DoubaoOS-Theme
+IconTheme=DoubaoOS-icons
+CursorTheme=DoubaoOS-cursors
+CursorSize=24
+ButtonLayout=:minimize,maximize,close
+TitlebarUsesDarkTheme=1
