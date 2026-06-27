@@ -139,6 +139,49 @@ nano ~/.config/doubaoos/office-mode.conf
 
 ---
 
+## 💿 构建 ISO 镜像
+
+如果你想生成可引导的 DoubaoOS ISO 安装镜像：
+
+### 环境要求
+- Debian 12 (Bookworm) 系统
+- root 权限
+- 至少 10GB 可用磁盘空间
+- 稳定的网络连接
+
+### 构建步骤
+
+```bash
+# 克隆仓库
+git clone https://github.com/dm1366631/A-system-made-by-Doubao.git
+cd A-system-made-by-Doubao
+
+# 运行构建脚本（需要 root 权限）
+sudo ./build-iso.sh
+```
+
+### 构建输出
+
+构建完成后，ISO 文件将位于 `output/` 目录：
+
+```
+output/
+├── DoubaoOS-v1.0-amd64.iso      # 可引导 ISO 镜像
+└── DoubaoOS-v1.0-amd64.iso.md5  # MD5 校验文件
+```
+
+### ISO 特性
+- ✅ 基于 Debian 12 Bookworm
+- ✅ Xfce 桌面环境（预装）
+- ✅ DoubaoOS 主题（开箱即用）
+- ✅ LibreOffice 办公套件
+- ✅ Firefox 浏览器
+- ✅ 办公模式切换工具
+- ✅ 可引导 Live 系统
+- ✅ 支持安装到硬盘
+
+---
+
 ## 🎨 主题预览
 
 ### 图标主题
