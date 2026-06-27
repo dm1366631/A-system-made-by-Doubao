@@ -1,0 +1,57 @@
+# DoubaoOS GTK2 Theme
+# 基于 Debian Xfce 的自定义美化主题
+
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#1e293b\ntooltip_fg_color:#ffffff\nselected_bg_color:#3b82f6\nselected_fg_color:#ffffff\ntext_color:#0f172a\nbg_color:#f8fafc\ntooltip_bg_color:#1e293b"
+
+# 样式设置
+gtk-auto-mnemonics = 1
+gtk-primary-button-warps-slider = 1
+
+# 字体
+gtk-font-name = "Sans 10"
+
+# 图标主题
+gtk-icon-theme-name = "DoubaoOS-icons"
+
+# 工具栏样式
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
+gtk-toolbar-icon-size = GTK_ICON_SIZE_LARGE_TOOLBAR
+
+# 菜单样式
+gtk-menu-bar-shadow = none
+gtk-menu-shadow = none
+
+# 按钮样式
+gtk-button-images = 1
+gtk-menu-images = 1
+
+# 滚动条
+gtk-scrollbar-stepper-spacing = 0
+gtk-range-slider-size = 12
+gtk-range-stepper-size = 0
+
+# 进度条
+gtk-progressbar-min-horizontal-bar-height = 16
+gtk-progressbar-min-vertical-bar-width = 16
+
+# 焦点
+gtk-focus-line-width = 1
+gtk-focus-padding = 1
+
+# 分隔线
+gtk-separator-width = 1
+gtk-separator-height = 1
+
+# 链接颜色
+gtk-link-color = "#3b82f6"
+gtk-visited-link-color = "#7c3aed"
+
+# 光标主题
+gtk-cursor-theme-name = "DoubaoOS-cursors"
+gtk-cursor-theme-size = 24
+
+# 启用抗锯齿
+gtk-xft-antialias = 1
+gtk-xft-hinting = 1
+gtk-xft-hintstyle = "hintslight"
+gtk-xft-rgba = "rgb"
