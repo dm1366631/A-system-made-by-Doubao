@@ -1,0 +1,17 @@
+<defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#6b7280"/>
+<stop offset="100%" stop-color="#334155"/>
+</linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<rect x="117.75999999999999" y="58.88" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(0 122.88 64.0)"/>
+<rect x="100.51444727626392" y="100.51444727626391" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(45 105.63444727626393 105.63444727626391)"/>
+<rect x="58.88" y="117.75999999999999" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(90 64.0 122.88)"/>
+<rect x="17.245552723736086" y="100.51444727626392" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(135 22.365552723736087 105.63444727626393)"/>
+<rect x="-2.6645352591003757e-15" y="58.88000000000002" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(180 5.119999999999997 64.00000000000001)"/>
+<rect x="17.245552723736072" y="17.245552723736086" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(225 22.365552723736073 22.365552723736087)"/>
+<rect x="58.87999999999999" y="-2.6645352591003757e-15" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(270 63.999999999999986 5.119999999999997)"/>
+<rect x="100.51444727626391" y="17.245552723736072" width="10.24" height="10.24" rx="1.92" fill="url(#g1)" transform="rotate(315 105.63444727626391 22.365552723736073)"/>
+<circle cx="64.0" cy="64.0" r="48.64" fill="url(#g1)"/>
+<circle cx="64.0" cy="64.0" r="28.16" fill="#1e293b"/>
+<circle cx="64.0" cy="64.0" r="14.08" fill="#3b82f6"/>
+</svg>
